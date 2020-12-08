@@ -1,4 +1,5 @@
 * {
+<<<<<<< Updated upstream
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -96,5 +97,86 @@ h1 {
 
 .countries-list:first-child:hover {
   background-color: aquamarine;
+=======
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #ddb8b8;
+}
+
+.list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+@media screen and (max-width: 768px) {
+  .favourites_title {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .favourites_card {
+    width: 290px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .calls_card {
+    width: 290px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .favourites_card-info {
+    padding: 20px 19px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .favourites_product-title {
+    margin-bottom: 4px;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+>>>>>>> Stashed changes
 }
 /*# sourceMappingURL=main.css.map */
