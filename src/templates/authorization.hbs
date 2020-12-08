@@ -1,0 +1,21 @@
+{{#each this}}
+<form class="modal js-auth-form" autocomplete="off">
+    <button data-close-modal class="close-button"><svg class="close-item">
+            <use href="./img/symbol-defs.svg#close-24px"></use>
+        </svg></button>
+    <h2 class="form-title">Ви можете авторизуватися за допомогою Google Account:</h2>
+    <button data-google-auth class="google-button"><svg class="google-item">
+            <use href="./img/symbol-defs.svg#google-logo"></use>
+        </svg>Google</button>
+    <h2 class="form-title">Або зайти за допомогою імейлу і пароля, попередньо зареєструвавшись:</h2>
+    <label class="form-field" for="e-mail"><input class="form-input" type="email" name="email" placeholder="E-mail"
+            autofocus /><span class="form-label"></span></label>
+    <label class="form-field">
+        <input class="form-input" type="text" name="name" placeholder="Password" /><span class="form-label"></span>
+    </label>
+    <div class="auth-login-form">
+        <button class="login-button" type="submit">Увійти</button>
+        <button class="login-button" type="submit">Зареєструватись</button>
+    </div>
+</form>
+{{/each}}
