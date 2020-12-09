@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  padding-top: 15px;
+  font-family: Roboto;
+}
+
+main {
+  margin-top: 95px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 48px;
+}
