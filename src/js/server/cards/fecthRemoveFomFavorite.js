@@ -1,9 +1,10 @@
-// https://callboard-backend.herokuapp.com/api-docs/#/Call/get_call_favourites
+// Remove from favotite
+// https://callboard-backend.herokuapp.com/api-docs/#/Call/delete_call_favourite__callId_
 
 var raw = "";
 
 var requestOptions = {
-  method: 'GET',
+  method: 'DELETE',
   body: raw,
   redirect: 'follow'
 };
@@ -11,12 +12,10 @@ var requestOptions = {
 fetch("https://callboard-backend.herokuapp.com/call/favourites", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-
-
-
-// Example Value
-// Schema
+    .catch(error => console.log('error', error));
+    
+  
+//     Example Value
 // {
 //   "newFavourites": [
 //     {
@@ -35,4 +34,3 @@ fetch("https://callboard-backend.herokuapp.com/call/favourites", requestOptions)
 //       "__v": 0
 //     }
 //   ]
-// }

@@ -1,9 +1,13 @@
-// https://callboard-backend.herokuapp.com/api-docs/#/Call/get_call_favourites
+//додати картку до обраного та повернути для рендерингу
+// Add call to favourites
+// https://callboard-backend.herokuapp.com/api-docs/#/Call/post_call_favourite__callId_
+
+// /call/favourite/{callId}
 
 var raw = "";
 
 var requestOptions = {
-  method: 'GET',
+  method: 'POST',
   body: raw,
   redirect: 'follow'
 };
@@ -11,12 +15,10 @@ var requestOptions = {
 fetch("https://callboard-backend.herokuapp.com/call/favourites", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+    .catch(error => console.log('error', error));
+  
 
-
-
-// Example Value
-// Schema
+//     Example Value
 // {
 //   "newFavourites": [
 //     {

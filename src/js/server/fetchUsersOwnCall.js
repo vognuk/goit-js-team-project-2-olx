@@ -1,4 +1,6 @@
-// https://callboard-backend.herokuapp.com/api-docs/#/Call/get_call_favourites
+//https://callboard-backend.herokuapp.com/api-docs/#/Call/get_call_own
+
+//Мої оголошення
 
 var raw = "";
 
@@ -8,17 +10,15 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://callboard-backend.herokuapp.com/call/favourites", requestOptions)
+fetch("https://callboard-backend.herokuapp.com/call/own", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 
 
-
-// Example Value
-// Schema
+//   Example Value
 // {
-//   "newFavourites": [
+//   "favourites": [
 //     {
 //       "title": "Tesla Model X",
 //       "imageUrls": [
