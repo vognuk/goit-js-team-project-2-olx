@@ -1,8 +1,9 @@
-<footer class="footer-box">
+{{#each this}}
+<div class="footer-box">
     <svg class="footer-icon-copyright">
         <use href="./images/search-footer-symbol-defs.svg#icon-copyright"></use>
     </svg>
-    <span>2019</span>
+    <span>year</span>
     <svg class="footer-icon-vector">
         <use href="./images/search-footer-symbol-defs.svg#icon-vector"></use>
     </svg>
@@ -18,4 +19,5 @@
         <span>by
             <a href="https://goit.ua/proekty/" target="_blank"> GoIT Students</a></span>
     </div>
-</footer>
+</div>
+{{/each}}
