@@ -170,4 +170,236 @@ h1 {
   height: 18px;
   margin-right: 20px;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  border-bottom: 1px solid #e2e3e5;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+}
+
+button:hover, button:focus {
+  outline-style: none;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navigation_logo {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  border: 0;
+  width: 69px;
+  height: 70px;
+}
+
+.navigation_menu_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  border: 0;
+  border-right: 1px solid #e2e3e5;
+  width: 69px;
+  height: 70px;
+}
+
+.navigation_menu_button.is_open {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  border: none;
+}
+
+.navigation_menu_button.is_open .navigation_menu_close_icon {
+  display: block;
+}
+
+.navigation_menu_button.is_open .navigation_menu_open_icon {
+  display: none;
+}
+
+.search_button_icon {
+  fill: black;
+  height: 18px;
+  width: 18px;
+}
+
+.search_button.is_open {
+  display: none;
+  pointer-events: none;
+}
+
+.navigation_menu_close_icon {
+  display: none;
+}
+
+.header_menu_container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.header_menu_container.is_open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  background-color: #ffffff;
+}
+
+.header_auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 34px;
+  border-top: 1px solid #E2E3E5;
+  border-bottom: 1px solid #E2E3E5;
+}
+
+.header_auth > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header_auth_button {
+  background-color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.auth_icon {
+  margin-right: 10px;
+}
+
+.category_item {
+  max-height: 70px;
+  border-bottom: 1px solid #E2E3E5;
+  padding: 27px 34px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.is_hidden {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .is_hidden {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1200px) {
+  .contact-link-item {
+    margin-top: 0;
+    font-size: 12px;
+  }
+  header {
+    width: 768px;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

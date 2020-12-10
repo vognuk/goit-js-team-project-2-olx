@@ -5,10 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />    -->
+  <link rel="stylesheet" href="../css/main.min.css">
     <title>Olx</title>
   </head>
   <body>
     <header>
+      <div class="navigation">
+        <!--Company logo as a link to main page, change the src when copying to index.html-->
+
+        <button type="button" class="navigation_menu_button" data-filter-button>
+          <svg
+        
+            class="navigation_menu_button_icon"
+            aria-label="кнопка меню категорий"
+          >
+            <use
+              class="navigation_menu_open_icon"
+              href="./images/header.svg#icon-menu-24px-1"
+            ></use>
+            <use
+              class="navigation_menu_close_icon"
+              href="./images/header.svg#icon-close-24px-1"
+            ></use>
+          </svg>
+        </button>
+        <a class="navigation_logo" lang="en" href="./header.html"> Logo </a>
+        <button type="button" class="search_button filter-menu">
+          <svg class="search_button_icon" aria-label="кнопка поиска">
+            <use class="search_button_icon" href="./images/header.svg#icon-search-24px-1"></use>
+          </svg>
+        </button>
+        <div class="is_hidden">
+          <svg class="auth_icon" aria-label="иконка аутентификации">
+            <use href="./images/header.svg#icon-user-profile-1"></use>
+          </svg>
+          <button class="header_create">Створити оголошення!</button>
+          <button class="clear_filter">
+            <svg class="auth_icon" aria-label="иконка аутентификации">
+              <use href="./images/header.svg#icon-replay-24px-1-1"></use>
+            </svg>
+            Очистити фільтри</button>
+
+        </div>
+
+      </div>
+     
+
+
+      <!--Navigation to other pages of web-site-->
+      <div class="header_menu_container">
+        <div class="header_auth">
+          <svg class="auth_icon" aria-label="иконка аутентификации">
+            <use href="./images/header.svg#icon-user-profile-1"></use>
+          </svg>
+          <button class="header_auth_button">Реєстрація / Увійти</button>
+        </div>
+
+        <ul class="header_categories_list">
+          <li class="category_item">Нерухомість</li>
+          <li class="category_item">Транспорт</li>
+          <li class="category_item">Робота</li>
+          <li class="category_item">Електроніка</li>
+          <li class="category_item">Бізнес та послуги</li>
+          <li class="category_item">Відпочинок і спорт</li>
+          <li class="category_item">Віддам безкоштовно</li>
+          <li class="category_item">Обмін</li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="search"></section>
@@ -17,6 +80,7 @@
     </main>
     <footer>
     </footer>
+    <script src="./js/button.js"></script>
   </body>
 </html>
  
