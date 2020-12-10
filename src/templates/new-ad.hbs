@@ -1,0 +1,58 @@
+{{#each this}}
+<div class="modal-new-ad">
+    <h2>Додати оголошення</h2>
+    <form action="">
+
+        <!-- Название товара -->
+        <div class="name-of-product">
+            <label for="">Назва товару</label>
+            <input type="text">
+        </div>
+
+        <!-- Фото товар -->
+        <div class="product-foto">
+            <label for="">Фото</label>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <!-- Описание товара -->
+        <div class="product-description">
+            <label for="">Опис товару</label>
+            <textarea name="description" rows="5" cols="50" id="comment" placeholder=" "></textarea>
+        </div>
+
+        <!-- Категория товара -->
+        <div class="product-category">
+            <label for="">Категорія товару</label>
+            <select style="width: 100%" name="" id="">
+                <option value=""></option>
+            </select>
+        </div>
+
+        <!-- Цена -->
+        <div>
+            <label for="">Ціна</label>
+            <input type="text" placeholder="0.00 грн">
+        </div>
+
+
+        <!-- Телефон -->
+        <div>
+            <label for="">Телефон</label>
+            <input type="tel" placeholder="+38 (0--) --- -- --">
+        </div>
+
+        <!-- Кнопка "Додати" -->
+        <div>
+            <button type="submit">Додати</button>
+        </div>
+    </form>
+</div>
+{{/each}}

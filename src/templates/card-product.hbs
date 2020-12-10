@@ -1,52 +1,56 @@
 {{#each this}}
-<div>
-    <button data-close-modal class="close-button">
-        <svg class="close-item">
-            <use href="../images/symbol-defs-1.svg#icon-close-24px-1"></use>
-        </svg>
-    </button>
-    <h2 class="card-product-title">Футболка спортивна</h2>
-    <span class="code-of-product">Код товару | 105-С</span>
-    <img class="foto-of-product" src="" alt="">
-    <ul class="other-foto-of-product">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <h2 class="price-of-product">200.00 грн</h2>
-
-    <div>
-        <button>
-            Информация о продавце
+<div class="backdrop">
+    <div class="card">
+        <button class="close-button">
+            <svg class="close-icon">
+                <use href="../images/symbol-defs-1.svg#icon-close-24px-1"></use>
+            </svg>
         </button>
-        <span>
-            В обране
-            <svg class="modal-close-icon">
-                <use href="../images/symbol-defs-1.svg#icon-heart"></use>
-            </svg>
-        </span>
-        <span>
-            Поділитися
-            <svg class="modal-close-icon">
-                <use href="../images/symbol-defs-1.svg#icon-share-1-1"></use>
-            </svg>
-        </span>
 
+        <h3 class="card-title">Футболка спортивна</h3>
+        <span class="code-product">Код товару | 105-С</span>
+        <div class="foto-container">
+            <img class="photo-product" src="/" alt="Product">
+            <ul class="other-photo">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <span class="price">200.00 грн</span>
+        <!--Информация о продавце-->
         <div>
-            <span>
+            <button class="info-seller">
+                <span>
+                    Информация о <br> продавце
+                </span>
+            </button>
+            <div class="icons">
+                <span class="like">
+                    В обране
+                    <svg class="icons-like-share">
+                        <use href="../images/symbol-defs-1.svg#icon-heart"></use>
+                    </svg>
+                </span>
+                <span class="share">
+                    Поділитися
+                    <svg class="icons-like-share">
+                        <use href="../images/symbol-defs-1.svg#icon-share-1-1"></use>
+                    </svg>
+                </span>
+            </div>
+            <!--Опис-->
+            <span class="description-text">
                 Опис:
             </span>
-            <p>
+            <p class="description">
                 Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum
                 используют
                 потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
             </p>
         </div>
     </div>
-</div>
-
-
 </div>
 {{/each}}
