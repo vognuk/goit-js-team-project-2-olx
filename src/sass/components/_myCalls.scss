@@ -1,0 +1,132 @@
+body {
+ color: #000000;
+}
+h1,
+h2,
+h3 {
+ margin-top: 0px;
+ margin-bottom: 0px;
+ padding: 0px;
+}
+img {
+ display: block;
+ max-width: 100%;
+ height: auto;
+}
+// container
+.myCalls_container {
+ margin-left: auto;
+ margin-right: auto;
+ @media screen and (max-width: 767px) {
+  width: 290px;
+  padding-left: 15px;
+  padding-right: 15px;
+ }
+ @media screen and (min-width: 768px) {
+  width: 724px;
+  padding-left: 22px;
+  padding-right: 22px;
+ }
+ @media screen and (min-width: 1280px) {
+  width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+}
+
+.myCalls_title {
+ margin-bottom: 25px;
+ font-family: Montserrat;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 1.25;
+ line-height: 15px;
+ letter-spacing: 0.09em;
+ text-transform: uppercase;
+}
+.myCalls_item {
+ position: relative;
+}
+.myCalls_card:hover {
+ filter: grayscale(50%);
+}
+.myCalls_head-title {
+ display: flex;
+}
+.button-left-icon {
+ position: absolute;
+ visibility: hidden;
+}
+.button-right-icon {
+ position: absolute;
+ visibility: hidden;
+}
+.heart-icon {
+ position: absolute;
+ visibility: hidden;
+ @media screen and (max-width: 767px) {
+  top: 30px;
+  right: 15px;
+  width: 14px;
+  height: 12px;
+ }
+}
+.heart-icon-orange {
+ position: absolute;
+ visibility: hidden;
+ @media screen and (max-width: 767px) {
+  top: 30px;
+  right: 15px;
+ }
+}
+.edit-icon {
+ position: absolute;
+ visibility: hidden;
+}
+.fullscreen-icon {
+ position: absolute;
+ visibility: hidden;
+}
+.myCalls_card-picture:hover .heart-icon {
+ visibility: initial;
+}
+// .myCalls_card-picture:hover .heart-icon-orange {
+//  visibility: initial;
+// }
+.myCalls_card-picture:hover .edit-icon {
+ @media screen and (min-width: 768px) {
+  visibility: initial;
+ }
+}
+.myCalls_card-picture:hover .fullscreen-icon {
+ @media screen and (min-width: 768px) {
+  visibility: initial;
+ }
+}
+// .heart-icon:active
+// .heart-icon:focus {
+//  fill: #ff6b09;
+// }
+// .heart-icon:hover .heart-icon-orange {
+//   visibility: initial;
+// }
+.myCalls_card-info {
+ padding: 20px 19px;
+}
+.myCalls_product-title {
+ margin-bottom: 4px;
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: 300;
+ font-size: 1.16;
+ line-height: 14px;
+ letter-spacing: 0.07em;
+}
+.myCalls_price {
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 1.14;
+ line-height: 16px;
+ letter-spacing: 0.04em;
+}

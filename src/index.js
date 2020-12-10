@@ -1,8 +1,11 @@
 import './css/normalize.css';
 import './css/reset.css';
-import './css/main.min.css';
+import '../css/main.min.css';
 
 // Slipchenko//
-import myCallsRender from './js/myCallsRender'
-myCallsRender();
+// import onHoverCard from './js/myCalls'
+// import myCallsRender from './js/myCallsRender'
+// onHoverCard();
+
+// myCallsRender();
 console.log('Hi');
