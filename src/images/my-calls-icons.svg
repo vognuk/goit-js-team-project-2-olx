@@ -16,12 +16,12 @@
         d="M12.844 12.446l1.091-1.091 4.645 4.645-4.645 4.645-1.091-1.092 3.545-3.553-3.545-3.554z"></path>
     </symbol>
     <symbol id="icon-edit" viewBox="0 0 32 32">
-      <path fill="#fff" style="fill: var(--color2, #000)"
+      <path fill="#fff" style="fill: var(--color1, #fff)"
         d="M32 29.714h-32v2.971h32v-2.971zM21.927 1.038l-16.526 16.526v7.577h7.582l16.526-16.523-7.584-7.579zM11.87 22.464h-3.79v-3.79l13.847-13.847 3.79 3.79-13.847 13.847z">
       </path>
     </symbol>
     <symbol id="icon-fullscreen" viewBox="0 0 32 32">
-      <path fill="#fff" style="fill: var(--color2, #000)"
+      <path fill="#fff" style="fill: var(--color1, #fff)"
         d="M9.142 18.742h-2.742v6.858h6.858v-2.742h-4.115v-4.115zM6.4 13.258h2.742v-4.115h4.115v-2.742h-6.858v6.858zM22.858 22.858h-4.115v2.742h6.858v-6.858h-2.742v4.115zM18.742 6.4v2.742h4.115v4.115h2.742v-6.858h-6.858z">
       </path>
     </symbol>

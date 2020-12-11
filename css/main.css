@@ -219,7 +219,8 @@ img {
 }
 
 .myCalls_title {
-  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: auto;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -229,8 +230,59 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1280px) {
+  .myCalls_title {
+    margin-left: 28px;
+    margin-right: auto;
+  }
+}
+
+.myCalls_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .myCalls_item {
-  position: relative;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 767px) {
+  .myCalls_item {
+    margin-bottom: 20px;
+  }
+  .myCalls_item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .myCalls_item {
+    width: calc((100% - 20px) / 2);
+    margin-right: 20px;
+  }
+  .myCalls_item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .myCalls_item {
+    width: calc((100% - 60px) / 4);
+  }
+  .myCalls_item:nth-child(2n) {
+    margin-right: 20px;
+  }
+  .myCalls_item:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
+.myCalls_card {
+  width: 100%;
 }
 
 .myCalls_card:hover {
@@ -242,35 +294,60 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
 }
 
-.button-left-icon {
-  position: absolute;
-  visibility: hidden;
+@media screen and (min-width: 768px) {
+  .myCalls_head-title {
+    margin-bottom: 20px;
+  }
 }
 
-.button-right-icon {
-  position: absolute;
-  visibility: hidden;
+@media screen and (min-width: 1280px) {
+  .myCalls_head-title {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-left-icon {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-right-icon {
+    position: absolute;
+    visibility: hidden;
+  }
 }
 
 .heart-icon {
   position: absolute;
   visibility: hidden;
+  top: 19px;
+  right: 18px;
 }
 
 @media screen and (max-width: 767px) {
   .heart-icon {
     top: 30px;
     right: 15px;
-    width: 14px;
-    height: 12px;
   }
 }
 
 .heart-icon-orange {
   position: absolute;
   visibility: hidden;
+  top: 15px;
+  right: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -281,13 +358,21 @@ img {
 }
 
 .edit-icon {
+  top: 43px;
+  right: 18px;
   position: absolute;
   visibility: hidden;
 }
 
 .fullscreen-icon {
+  bottom: 16px;
+  right: 15px;
   position: absolute;
   visibility: hidden;
+}
+
+.myCalls_card-picture {
+  position: relative;
 }
 
 .myCalls_card-picture:hover .heart-icon {

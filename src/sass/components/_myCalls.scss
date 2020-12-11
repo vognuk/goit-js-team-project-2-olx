@@ -1,5 +1,6 @@
 body {
  color: #000000;
+ //  background-color: grey;
 }
 h1,
 h2,
@@ -35,7 +36,12 @@ img {
 }
 
 .myCalls_title {
- margin-bottom: 25px;
+ margin-left: 20px;
+ margin-right: auto;
+ @media screen and (min-width: 1280px) {
+  margin-left: 28px;
+  margin-right: auto;
+ }
  font-family: Montserrat;
  font-style: normal;
  font-weight: bold;
@@ -44,31 +50,73 @@ img {
  letter-spacing: 0.09em;
  text-transform: uppercase;
 }
+.myCalls_list {
+ display: flex;
+ flex-wrap: wrap;
+}
 .myCalls_item {
- position: relative;
+ box-shadow: (0px 2px 4px rgba(0, 0, 0, 0.1));
+ @media screen and (max-width: 767px) {
+  margin-bottom: 20px;
+  &:last-child {
+   margin-bottom: 0;
+  }
+ }
+ @media screen and (min-width: 768px) {
+  width: calc((100% - 20px) / 2);
+  margin-right: 20px;
+  &:nth-child(2n) {
+   margin-right: 0;
+  }
+ }
+ @media screen and (min-width: 1280px) {
+  width: calc((100% - 60px) / 4);
+  &:nth-child(2n) {
+   margin-right: 20px;
+  }
+  &:nth-child(4n) {
+   margin-right: 0px;
+  }
+ }
+}
+.myCalls_card {
+ width: 100%;
 }
 .myCalls_card:hover {
  filter: grayscale(50%);
 }
 .myCalls_head-title {
  display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 25px;
+ @media screen and (min-width: 768px) {
+  margin-bottom: 20px;
+ }
+ @media screen and (min-width: 1280px) {
+  margin-bottom: 15px;
+ }
 }
 .button-left-icon {
- position: absolute;
- visibility: hidden;
+ @media screen and (max-width: 767px) {
+  position: absolute;
+  visibility: hidden;
+ }
 }
 .button-right-icon {
- position: absolute;
- visibility: hidden;
+ @media screen and (max-width: 767px) {
+  position: absolute;
+  visibility: hidden;
+ }
 }
 .heart-icon {
  position: absolute;
  visibility: hidden;
+ top: 19px;
+ right: 18px;
  @media screen and (max-width: 767px) {
   top: 30px;
   right: 15px;
-  width: 14px;
-  height: 12px;
  }
 }
 .heart-icon-orange {
@@ -78,14 +126,23 @@ img {
   top: 30px;
   right: 15px;
  }
+ top: 15px;
+ right: 15px;
 }
 .edit-icon {
+ top: 43px;
+ right: 18px;
  position: absolute;
  visibility: hidden;
 }
 .fullscreen-icon {
+ bottom: 16px;
+ right: 15px;
  position: absolute;
  visibility: hidden;
+}
+.myCalls_card-picture {
+ position: relative;
 }
 .myCalls_card-picture:hover .heart-icon {
  visibility: initial;
@@ -115,6 +172,7 @@ img {
 }
 .myCalls_product-title {
  margin-bottom: 4px;
+
  font-family: Roboto;
  font-style: normal;
  font-weight: 300;
